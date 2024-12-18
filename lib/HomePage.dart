@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
-
   @override
   State<HomePage> createState() => _HomePageState();
 }
@@ -38,6 +37,63 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
+        ),
+      ),
+      body: Center(
+        child: Flex(
+          direction: Axis.vertical,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Flex(
+              direction: Axis.horizontal,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                // Container(
+                //   decoration: BoxDecoration(
+                //     color: Colors.black,
+                //     border: Border.all(width: 10),
+                //     borderRadius: BorderRadius.circular(10),
+                //   ),
+                // ),
+                Image.asset(
+                  "assets/images/ambulance.png",
+                  width: 150,
+                  height: 150,
+                ),
+                Image.asset(
+                  "assets/images/firefighter.png",
+                  width: 120,
+                  height: 120,
+                ),
+                Image.asset(
+                  "assets/images/policeman.png",
+                  width: 120,
+                  height: 100,
+                ),
+              ],
+            ),
+            Flex(
+              direction: Axis.horizontal,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset(
+                  "assets/images/sewage.png",
+                  width: 120,
+                  height: 120,
+                ),
+                Image.asset(
+                  "assets/images/garbage.png",
+                  width: 120,
+                  height: 120,
+                ),
+                Image.asset(
+                  "assets/images/noparking.png",
+                  width: 120,
+                  height: 120,
+                )
+              ],
+            ),
+          ],
         ),
       ),
     );
